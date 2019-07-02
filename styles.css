@@ -1,0 +1,68 @@
+body{
+    background-image: url("https://i.imgur.com/PiHyTQu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#gameboy{
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    width: 422px;
+    height: 697px;
+    background: rgb(221, 140, 140);
+    border-radius: 10px 10px 60px 10px;
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+    text-align:center;
+   
+}
+
+#poke-container{
+    position: relative;
+    top: 60px;
+    left: 40px;
+    width: 342px;
+    height: 372px;
+    margin-bottom: 58px;
+    background-color: rgb(229, 238, 153);
+    border-radius: 13px 13px 50px 13px;
+    text-align: center;
+    align-items: center;
+
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+#pokemon-search{
+    text-align: center;
+    padding: 0.5em;
+   
+}
+
+#poke-info{
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    position: bottom;
+}
+ h3{
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ #Poke-Ab{
+     font-size: 16px;
+     text-decoration: underline;
+ }
+
+ .type{
+     text-align: center;
+     color: red;
+ }
+

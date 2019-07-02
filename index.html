@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Pokédex</title>
+</head>
+<body>
+    <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Welcome to your Pokédex</h5>
+                
+            </div>
+            <div class="modal-body">
+                <p>Welcome! As a Pokémon trainer, how do you select your team without knowing the Pokémon's capabilties? Well that issue is now resolved! With a Pokédex in hand, you are able to search for each Pokémon by name to find out what skills they have.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Lets Begin!</button>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="gameboy">
+        <h3>My Pokémon Pokédex</h3>
+        <div id="poke-container">
+            <div class="poke-name"></div>
+            <div class="poke-image"></div>
+            <div id="poke-info">
+                <ul class="type"></ul>
+                <ul class="abilities"></ul>
+                
+            </div>
+           
+            <div class="flex-container" id="favorites"></div>
+
+        </div>
+
+        <div class="modal fade" id="pokeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirming</h5>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you would like to add this Pokémon to your team?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        <form id="pokemon-search">
+            <input type="text" placeholder="Your Pokémon" id="userInput">
+            <input type="submit" id="submit">
+        </form>
+
+        <button class="w3-circle">A</button>    
+        <button class="w3-circle">B</button>
+    </div>
+
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
